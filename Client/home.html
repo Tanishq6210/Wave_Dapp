@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wave Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body onload="getAllWaves()">
+    <center><h1>Blockchain Based Waving Dapp 👋 </h1></center>
+    <br><hr><br>
+    <center><button id="connect" class="button-85" role="button" onclick="connect()">Login to Metamask</button></center>
+    <br><br>
+    
+    <center><b><label for="name" class="form__label">Enter Message</label></b>: <input type="text" class="form__input" id="msg" placeholder="Enter Message" required="" /></center><br><br>
+    
+
+    <center><button id="wave" class="button-85" role="button" onclick="onWave()">Wave</button></center>
+    <div id="myDynamicTable">
+        <table id="table" width="100%">
+            <tr>
+                <th>Message</th>
+                <th>From</th>
+                <th>Timestamp</th>
+            </tr>
+        </table>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.4-rc.0/web3.min.js"
+        integrity="sha512-RGPKVfQewHGfk9yaB7ThGPKAQU+civS5awsfStLg22jrWbqgDkNzPtIwNFpFApr3ccjB730SRxi+KnDjhIuTpw=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      ></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
